@@ -13,7 +13,7 @@ public class Pizza {
     }
 
     public String toString(){
-        String ret =  "A " + size + "\" pizza with " + sauce + " sauce, " + cheese + " cheese, and " + toppings.length + " toppings (";
+        String ret =  "a " + size + "\" pizza with " + sauce + " sauce, " + cheese + " cheese, and " + toppings.length + " toppings (";
         for (int i = 0; i < toppings.length; i++){
             if(i != toppings.length-1){
                 ret += toppings[i] + ", ";
@@ -21,8 +21,11 @@ public class Pizza {
                 ret += toppings[i];
             }
         }
-        ret += ")\nCost: $" + cost;
+        ret += ")";
         return ret;
+    }
+    public double getCost(){
+        return cost;
     }
 }
 
